@@ -13,10 +13,21 @@
   text-align: center;
   background: url("/images/content1920.jpg") no-repeat;
   background-size: cover;
+  background-position: 50% 50%;
   z-index: 99;
+  background-color: rgba(230, 230, 230, 0.85);
+  background-blend-mode: lighten;
   position: relative;
-  height: 58vh;
+  height: 65vh;
   overflow: auto;
+}
+
+.content h2 {
+  margin-top: 15px;
+  color: #303030;
+  width: 50%;
+  margin: 15px auto 0 auto;
+  border-bottom: 1px solid #eee;
 }
 
 .coolfloat {
@@ -27,16 +38,14 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 .coolfloat p {
-  width: 50%;
-  color: #eee;
-  background-color: rgba(34, 34, 34, 0.884);
+  width: 65%;
+  line-height: 1.5;
+  color: #303030;
   border-radius: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -48,7 +57,10 @@
   -ms-flex-item-align: center;
       align-self: center;
   padding: 8px;
-  font-size: 21px;
+  font-size: 20px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  border-bottom: 1px solid #eee;
 }
 
 .coolfloat .video {
@@ -68,7 +80,7 @@ html {
 
 footer {
   color: #eee;
-  background-color: #3d3d3d;
+  background-color: #5e5e5e;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

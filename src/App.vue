@@ -8,12 +8,35 @@
     </div>
       <div class="cover">
         <div class="nav">
-          <div><router-link to="/">Home</router-link></div>
-        <div><router-link to="/about">About</router-link></div>
-        <div><router-link to="/prices">Arak</router-link></div>
+        <div><router-link to="/">Home</router-link></div>
+        <div><router-link to="/about">Rólam</router-link></div>
+        <div><router-link to="/prices">Árak</router-link></div>
+        <div><router-link to="/contact">Partnerek</router-link></div>
         <div><router-link to="/contact">Kapcsolat</router-link></div>
         </div>
       </div>
+
+    <div class="menu-bar menu-bar-animated" @click="toggleAnim">
+				<div class="menu_bar__bar" v-bind:class="{ menu_bar__close: isActive }">
+
+        </div>
+			</div>
+		<nav class="navigation_mobile" v-show="clicked">
+			
+			<ul class="nav__mobile__ul">
+        <div><router-link to="/">Home</router-link></div>
+        <div><router-link to="/about">Rólam</router-link></div>
+        <div><router-link to="/prices">Árak</router-link></div>
+        <div><router-link to="/contact">Partnerek</router-link></div>
+        <div><router-link to="/contact">Kapcsolat</router-link></div>
+
+				<!-- <a href="#rolunk"><li class="nav__mobile__li"> Rólunk</li></a>
+				<a href="#infok"><li class="nav__mobile__li"> Hasznos infók</li></a>
+				<a href="#elerhetoseg"><li class="nav__mobile__li"> Elérhetőségeink</li></a>
+				<a href="#"><li class="nav__mobile__li"> Galéria</li></a> -->
+			</ul>
+		</nav>
+
     </header>
     <div class="content">
       <transition name="fade">
@@ -37,12 +60,28 @@
 </template>
 
 <script>
-
-export default {
-  name: 'App',
-  components: {
+  export default {
+    data: function() {
+      return {
+        clicked: false,
+        isActive: false
+        
+      }
+      },
+      mounted() {
+        this.clickClose;
+      },
+      methods: {
+      clickClose() {
+        this.clicked = false;
+      },
+      toggleAnim() {
+        this.clicked = !this.clicked;
+        this.isActive = !this.isActive;
+      }
+      
+      }
   }
-}
 </script>
 
 <style>
