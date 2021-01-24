@@ -24,11 +24,11 @@
 		<nav class="navigation_mobile" v-show="clicked">
 			
 			<ul class="nav__mobile__ul">
-        <div><router-link to="/">Home</router-link></div>
-        <div><router-link to="/about">Rólam</router-link></div>
-        <div><router-link to="/prices">Árak</router-link></div>
-        <div><router-link to="/contact">Partnerek</router-link></div>
-        <div><router-link to="/contact">Kapcsolat</router-link></div>
+        <div><router-link to="/"><i class="fas fa-home"></i> Home</router-link></div>
+        <div><router-link to="/about"><i class="far fa-user"></i> Rólam</router-link></div>
+        <div><router-link to="/prices"><i class="fas fa-wallet"></i> Árak</router-link></div>
+        <div><router-link to="/partnerek"> <i class="fas fa-users"></i> Partnerek</router-link></div>
+        <div><router-link to="/contact"><i class="far fa-address-card"></i> Kapcsolat</router-link></div>
 
 				<!-- <a href="#rolunk"><li class="nav__mobile__li"> Rólunk</li></a>
 				<a href="#infok"><li class="nav__mobile__li"> Hasznos infók</li></a>

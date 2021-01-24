@@ -7,5 +7,6 @@
        Your browser does not support the video tag.
        </video>
       </div> -->
+      <p class="coolfloat home"><i class="fas fa-quote-left"></i> A siker az, amikor elégedetten állsz fel a fodrász székből! <i class="fas fa-quote-right"></i></p>
    </div>
 </template>

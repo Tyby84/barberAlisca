@@ -1,21 +1,14 @@
-.hero {
-    display: flex;
-    //justify-content: center;
-    //align-items: center;
-    width: 50vw;
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: rgba(255, 255, 255, 0.788);
-    color: #222;
-    border-radius: 20px;
-    padding: 20px;
-
+.contactinfo {
+    margin-top: 10px;
     p {
-        font-size: 19px;
+        font-size: 22px;
+        margin: 8px auto;
+        color: rgb(48, 48, 48);
     }
-    
+    a {
+        color: rgb(27, 27, 27);
+        font-size: 23px;
+    }
 }
 
 .idopont {

@@ -71,6 +71,15 @@ header .idopont {
   left: 90%;
 }
 
+@media screen and (max-width: 425px) {
+  header .idopont {
+    top: 5px;
+    height: 40px;
+    width: 150px;
+    left: 77%;
+  }
+}
+
 header .navigation_mobile {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -82,10 +91,10 @@ header .navigation_mobile {
   border-radius: 20px;
   background-color: #555555;
   border: 1px solid #fff;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
-  width: 80vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 60vw;
   margin: 5px 0px 0px 5px;
   z-index: 8;
   height: -webkit-fit-content;

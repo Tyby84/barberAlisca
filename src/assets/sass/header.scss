@@ -45,6 +45,12 @@ header {
         align-items: center;
         justify-content: center;
         left: 90%;
+        @media screen and (max-width: 425px) {
+            top: 5px;
+            height: 40px;
+            width: 150px;
+            left: 77%;
+        }
     }
 
     .navigation_mobile {
@@ -53,8 +59,8 @@ header {
         border-radius: 20px;
         background-color: rgb(85, 85, 85); 
         border: 1px solid #fff;
-        align-items: start;
-        width: 80vw;
+        align-items: center;
+        width: 60vw;
         margin: 5px 0px 0px 5px;
         z-index: 8; 
         height: fit-content;
@@ -62,9 +68,9 @@ header {
         transition: all .5s ease-in-out;
         z-index: 999;
         position: absolute;
-    top: 40px;
-    left: 50%;
-    transform: translateX(-50%);
+        top: 40px;
+        left: 50%;
+        transform: translateX(-50%);
         
        /*  @include mobile {
             padding: 20px 20px 20px 25%;

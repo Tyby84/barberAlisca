@@ -1,6 +1,11 @@
 .priceList img {
   display: block;
   width: 40%;
-  max-width: 40%;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .priceList img {
+    width: 70%;
+  }
 }

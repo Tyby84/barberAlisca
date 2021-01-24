@@ -7,7 +7,7 @@
             A gimnazista éveimet Pécsett töltöttem, majd az érettségi után a pécsi jogi karon folytattam tanulmányaimat. 
             Azonban úgy éreztem, ez nem feltétlenül az én utam. <br>
             A kreativitásomat, az alkotás örömét a borbély szakmában találtam meg. 
-            Már gyerekkoromban sem volt mindegy, hogy áll a hajam. Eleinte a saját, majd később a barátaim haját kezdtem el vágni. 
+            <!-- Már gyerekkoromban sem volt mindegy, hogy áll a hajam. Eleinte a saját, majd később a barátaim haját kezdtem el vágni.  -->
             Az egyetemi éveim alatt éltem Pécsen, illetve Budapesten, ezekben a városokban találkoztam először a barber shopok világával.
        </p>
       <!--  <p v-scroll-reveal.reset="{ delay: 1250, origin: 'top', duration: 1000, distance: '50px',}">
