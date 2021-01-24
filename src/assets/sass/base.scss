@@ -1,0 +1,78 @@
+@import 'mixin.scss';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  #app {
+    height: 100vh;
+  }
+  .content {
+    text-align: center;
+    background: url('/images/content1920.jpg') no-repeat;
+    background-size: cover;
+    z-index: 99;
+    //min-height: 52vh;
+    position: relative;
+    //max-height: 100%;
+    height: 58vh;
+    overflow: auto;
+  }
+
+  .coolfloat {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+    padding-top: 20px;
+    padding-bottom: 20px;
+    p {
+      width: 50%;
+      color: #eee;
+      background-color:rgba(34, 34, 34, 0.884);
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      align-self: center;
+      padding: 8px;
+      font-size: 21px;
+      //margin-top: 5px;
+     // margin-bottom: 5px;
+    }
+    .video {
+      display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+    }
+  }
+html {
+  position: relative;
+  overflow-y: hidden;
+}
+  footer {
+    color: #eee;
+    background-color: rgb(61, 61, 61);
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    padding: 20px;
+    font-size: 21px;
+    height: 7vh;
+    .social {
+      margin-top: 10px;
+    }
+  }
+
+    .content::-webkit-scrollbar {
+    width: 8px;
+    }
+    
+    .content::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 6px rgba(173, 173, 173, 0.3);
+    }
+   
+    .content::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 255, 255);
+    outline: 1px solid rgb(196, 197, 197);
+    border-radius: 5px;
+    }

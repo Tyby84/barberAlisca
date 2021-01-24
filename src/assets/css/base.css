@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#app {
+  height: 100vh;
+}
+
+.content {
+  text-align: center;
+  background: url("/images/content1920.jpg") no-repeat;
+  background-size: cover;
+  z-index: 99;
+  position: relative;
+  height: 58vh;
+  overflow: auto;
+}
+
+.coolfloat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.coolfloat p {
+  width: 50%;
+  color: #eee;
+  background-color: rgba(34, 34, 34, 0.884);
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: center;
+      align-self: center;
+  padding: 8px;
+  font-size: 21px;
+}
+
+.coolfloat .video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 25px;
+}
+
+html {
+  position: relative;
+  overflow-y: hidden;
+}
+
+footer {
+  color: #eee;
+  background-color: #3d3d3d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  font-size: 21px;
+  height: 7vh;
+}
+
+footer .social {
+  margin-top: 10px;
+}
+
+.content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.content::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(173, 173, 173, 0.3);
+          box-shadow: inset 0 0 6px rgba(173, 173, 173, 0.3);
+}
+
+.content::-webkit-scrollbar-thumb {
+  background-color: white;
+  outline: 1px solid #c4c5c5;
+  border-radius: 5px;
+}

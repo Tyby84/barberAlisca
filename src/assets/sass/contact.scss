@@ -1,0 +1,30 @@
+.hero {
+    display: flex;
+    //justify-content: center;
+    //align-items: center;
+    width: 50vw;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.788);
+    color: #222;
+    border-radius: 20px;
+    padding: 20px;
+
+    p {
+        font-size: 19px;
+    }
+    
+}
+
+.idopont {
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgb(224, 224, 224);
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 19px;
+}
