@@ -3,7 +3,7 @@
     <header>
       <div class="idopont">
         <p>
-            Időpontfoglalás
+            <a href="http://bwnet.hu/partner/AliscaBarberSalon" target="_blank">Időpontfoglalás</a> 
         </p>
     </div>
       <div class="cover">
@@ -11,7 +11,7 @@
         <div><router-link to="/">Home</router-link></div>
         <div><router-link to="/about">Rólam</router-link></div>
         <div><router-link to="/prices">Árak</router-link></div>
-        <div><router-link to="/contact">Partnerek</router-link></div>
+        <div><router-link to="/partnerek">Partnerek</router-link></div>
         <div><router-link to="/contact">Kapcsolat</router-link></div>
         </div>
       </div>
@@ -21,7 +21,7 @@
 
         </div>
 			</div>
-		<nav class="navigation_mobile" v-show="clicked">
+		<nav class="navigation_mobile" v-show="clicked"  @click="closeMenu">
 			
 			<ul class="nav__mobile__ul">
         <div><router-link to="/"><i class="fas fa-home"></i> Home</router-link></div>
@@ -36,24 +36,24 @@
 				<a href="#"><li class="nav__mobile__li"> Galéria</li></a> -->
 			</ul>
 		</nav>
-
+ 
     </header>
-    <div class="content">
-      <transition name="fade">
+    <div class="content" @click="closeMenu">
+      <!-- <transition name="fade"> -->
         <keep-alive>
       <router-view></router-view>
         </keep-alive>
-    </transition> 
+    <!-- </transition>  -->
     </div>
     <footer>
       <div class="social">
-      <a href="#" target="_blank"><img src="images/png/facebook.png" /></a>
+      <a href="https://www.facebook.com/aliscabarbersalon" target="_blank"><img src="images/png/facebook.png" /></a>
       </div>
       <div class="copy">
         Alisca Barber | 2020  
       </div>
       <div class="social">
-      <a href="#" target="_blank"><img src="images/png/instagram.png" /></a>
+      <a href="https://www.instagram.com/aliscabarbersalon/?fbclid=IwAR2v6lFDoWxcTMUWebr-AdvvcLtqEMMikS3J1D2MN6wvV_IW9i366J7xXAA" target="_blank"><img src="images/png/instagram.png" /></a>
       </div>
     </footer>
   </div>
@@ -70,6 +70,7 @@
       },
       mounted() {
         this.clickClose;
+        this.closeMenu;
       },
       methods: {
       clickClose() {
@@ -78,6 +79,10 @@
       toggleAnim() {
         this.clicked = !this.clicked;
         this.isActive = !this.isActive;
+      },
+      closeMenu() {
+        this.clicked = false;
+        this.isActive = false;
       }
       
       }
@@ -87,8 +92,10 @@
 <style>
 @import './assets/css/mixin.css';
 @import './assets/css/base.css';
+@import './assets/css/content.css';
 @import './assets/css/header.css';
 @import './assets/css/prices.css';
 @import './assets/css/contact.css';
+@import './assets/css/partnerek.css';
 
 </style>

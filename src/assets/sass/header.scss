@@ -25,6 +25,7 @@ header {
             color: #eee;
             text-decoration: none;
             font-size: 20px;
+            font-weight: 200;
             padding: 8px 10px;
             background-color: rgb(82, 82, 82);
             border-radius: 10px;
@@ -38,18 +39,29 @@ header {
         }
     }
     .idopont {
-        top: 80px;
+        top: 40px;
         height: 50px;
-        width: 150px;
+        width: 145px;
         display: flex;
         align-items: center;
         justify-content: center;
-        left: 90%;
+        left: 91%;
+        font-size: 17px;
+        @media screen and (max-width: 800px) {
+            top: 20px;
+            left: 90%;
+            font-size: 16px;
+        }
         @media screen and (max-width: 425px) {
+            font-size: 15px;
             top: 5px;
-            height: 40px;
-            width: 150px;
+            height: 35px;
+            width: 140px;
             left: 77%;
+        }
+        a {
+            text-decoration: none;
+            color: #333;
         }
     }
 
@@ -85,12 +97,13 @@ header {
         padding: 20px 0px 20px 126px;
         } */
         a {
-          text-decoration: none;
-          color: rgb(233, 233, 233);
-          font-size: 19px;
-          font-weight: bold;
-          letter-spacing: 2px;
-          margin-bottom: 15px;
+            display: block;
+            text-decoration: none;
+            color: #e9e9e9;
+            font-size: 19px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
         }
     }
     .menu-bar {

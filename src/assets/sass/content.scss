@@ -1,0 +1,224 @@
+.content {
+    text-align: center;
+    background: url('/images/content1920.jpg') no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    z-index: 99;
+    background-color: rgba(230, 230, 230, 0.85);
+    background-blend-mode: lighten;
+    position: relative;
+    height: 65vh;
+    padding-bottom: 15px;
+    overflow: auto;
+    h2 {
+      margin-top: 15px;
+      padding-bottom: 15px;
+      color: rgb(48, 48, 48);
+      width: 50%;
+      margin: 15px auto 0 auto;
+      border-bottom: 1px solid #eee;
+    }
+  }
+.coolfloat {
+    display: flex;
+    flex-direction: column;
+    p {
+      width: 65%;
+      line-height: 1.5;
+      color: rgb(48, 48, 48);
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      align-self: center;
+      padding: 10px;
+      font-size: 20px;
+      margin-top: 6px;
+      margin-bottom: 6px;
+      border-bottom: 1px solid #eee;
+      @media screen and (max-width:768px) {
+        width: 100%;
+        height: 100%;
+        font-size: 18px;
+      }
+    }
+    
+    .video {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 25px;
+    }
+  }
+  
+ 
+  .home {
+    position: relative;
+    margin: 30px auto;
+    color: rgb(48, 48, 48);
+    width: 60%;
+    p {
+      font-size: 24px;
+      @media screen and (max-width:768px){
+      font-size: 21px;
+    }
+
+  }
+    
+    .homepics {
+        margin-top: 15px;
+        @media screen and (max-width: 768px){
+        display: flex;
+        flex-wrap: wrap;
+        //margin-left: 10px;
+        //justify-content: flex-end;
+        }
+    }
+    img {
+        display: inline-block;
+        width: 130px;
+        height: 180px;
+        margin-left: 35px;
+        margin-right: 50px;
+        margin-bottom: 10px;
+    }
+
+    
+}
+.appear {
+    opacity: 0;
+    animation: appear 1s ease-in-out 0s 1 normal forwards;
+}
+.fade {
+    opacity: 0;
+    animation: fade 2s ease-in-out .2s 1 normal forwards;
+}
+.fadelight {
+    opacity: 0;
+    animation: fadelight 2s ease-in-out .2s 1 normal forwards;
+}
+.floatleft {
+    opacity: 0;
+    margin-left: -70px;
+    animation: floatfromleft 1s ease-in-out 2s 1 normal forwards;  
+  }
+  .floatright {
+    opacity: 0;
+    margin-right: 70px;
+    animation: floatfromright 1s ease-in-out 3s 1 normal forwards;  
+  }
+  .floattop {
+    opacity: 0;
+    margin-top: -70px;
+    animation: floatfromtop 2s ease-in-out 4s 1 normal forwards;  
+  }
+  .floattop-normal {
+    opacity: 0;
+    margin-top: -30px;
+    animation: floatfromtop 2s ease-in-out 1s 1 normal forwards;  
+  }
+  .floatbot {
+    opacity: 0;
+    margin-bottom: 0px;
+    animation: floatfrombot 2s ease-in-out 6s 1 normal forwards;  
+  }
+  .floatbot-normal {
+    opacity: 0;
+    margin-bottom: 0px;
+    animation: floatfrombot 2s ease-in-out 2s 1 normal forwards;  
+  }
+
+/* Animaciok*/
+@keyframes floatfromleft {
+    0% {
+        opacity: 0.5;
+        margin-left: 0px; 
+    }
+    50% {
+        margin-left: 50px;
+        opacity: .8; 
+    }
+    100% {
+        margin-left: 0px;
+        opacity: 1; 
+    }
+}
+@keyframes floatfromright {
+    0% {
+        opacity: 0.5;
+        margin-right: 0px; 
+    }
+    50% {
+        margin-left: -50px;
+        opacity: .8; 
+    }
+    100% {
+        margin-right: 0px;
+        opacity: 1; 
+    }
+}
+@keyframes floatfromtop {
+    0% {
+        opacity: 0.5;
+        margin-top: 0px; 
+    }
+    50% {
+        margin-top: 20px;
+        opacity: .8; 
+    }
+    100% {
+        margin-top: 0px;
+        opacity: 1; 
+    }
+}
+@keyframes floatfrombot {
+    0% {
+        opacity: 0.5;
+        margin-bottom: 0px; 
+    }
+    50% {
+        margin-top: -5px;
+        opacity: .8; 
+    }
+    100% {
+        margin-bottom: 0px;
+        opacity: 1; 
+    }
+}
+@keyframes fade {
+    0% {
+        opacity: 0.2;
+        transform: scale(.8); 
+    }
+    50% {
+        opacity: 0.5;
+        transform: scale(1.3); 
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);  
+    }
+}
+@keyframes fadelight {
+    0% {
+        opacity: 0.2;
+        transform: scale(.5); 
+    }
+    50% {
+        opacity: 0.5;
+        transform: scale(1.1); 
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);  
+    }
+}
+@keyframes appear {
+    0% {
+        opacity: 0.2;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}

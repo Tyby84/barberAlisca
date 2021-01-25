@@ -1,13 +1,13 @@
 <template>
    <div class="">
-      <h2 class="text-centered">Rólam</h2>
+      <h2 class="text-centered fadelight">Rólam</h2>
       <div class="coolfloat">
-         <p v-scroll-reveal.reset="{ delay: 250, origin: 'left', duration: 1000, distance: '50px', }">
+         <p class="floatleft">
             A nevem Sterczer Tamás. Szekszárdon születtem és nőttem fel, ezer szállal kötődöm a szülővárosomhoz.
             A gimnazista éveimet Pécsett töltöttem, majd az érettségi után a pécsi jogi karon folytattam tanulmányaimat. 
             Azonban úgy éreztem, ez nem feltétlenül az én utam. <br>
             A kreativitásomat, az alkotás örömét a borbély szakmában találtam meg. 
-            <!-- Már gyerekkoromban sem volt mindegy, hogy áll a hajam. Eleinte a saját, majd később a barátaim haját kezdtem el vágni.  -->
+            Már gyerekkoromban sem volt mindegy, hogy áll a hajam. Eleinte a saját, majd később a barátaim haját kezdtem el vágni.
             Az egyetemi éveim alatt éltem Pécsen, illetve Budapesten, ezekben a városokban találkoztam először a barber shopok világával.
        </p>
       <!--  <p v-scroll-reveal.reset="{ delay: 1250, origin: 'top', duration: 1000, distance: '50px',}">
@@ -19,7 +19,7 @@
        Your browser does not support the video tag.
        </video>
       </div> -->
-      <p v-scroll-reveal.reset="{ delay: 1000, origin: 'right', duration: 1000, distance: '50px',  }">
+      <p class="floatright">
          Több pécsi barber shopban megfordultam gyakornokként, ez idő alatt hamar elhatároztam, hogy mindenképpen egy 
          saját üzletet szeretnék nyitni - mégpedig a szülővárosomban, Szekszárdon. 2019-ben  a főváros felé vettem az irányt, 
          beiratkoztam a Barber Shop Budapest Akadémiájára, ahol az ország kiemelkedő mestereitől sajátíthattam el a szakmát.

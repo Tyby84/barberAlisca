@@ -1,0 +1,32 @@
+.card {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 1px solid #666;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  margin-top: 20px;
+  padding-bottom: 5px;
+}
+
+.card img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.card a {
+  text-decoration: none;
+  color: #222;
+  font-size: 19px;
+}
+
+.flexrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}

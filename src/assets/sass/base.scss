@@ -3,101 +3,33 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Raleway', sans-serif;
   }
   #app {
     height: 100vh;
   }
-  .content {
-    text-align: center;
-    background: url('/images/content1920.jpg') no-repeat;
-    
-    background-size: cover;
-    background-position: 50% 50%;
-    z-index: 99;
-    background-color: rgba(230, 230, 230, 0.85);
-    background-blend-mode: lighten;
-    position: relative;
-    height: 65vh;
-    //max-height: 100%;
-    overflow: auto;
-    h2 {
-      margin-top: 15px;
-      padding-bottom: 15px;
-      color: rgb(48, 48, 48);
-      width: 50%;
-      margin: 15px auto 0 auto;
-      border-bottom: 1px solid #eee;
-    }
-  }
-
-  .coolfloat {
-    display: flex;
-    flex-direction: column;
-    //justify-content: space-around;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    p {
-      width: 65%;
-      line-height: 1.5;
-      color: rgb(48, 48, 48);
-      //background-color:rgba(58, 58, 58, 0.788);
-      border-radius: 20px;
-      display: flex;
-      flex-direction: column;
-      align-self: center;
-      padding: 8px;
-      font-size: 20px;
-      margin-top: 6px;
-      margin-bottom: 6px;
-      border-bottom: 1px solid #eee;
-      @media screen and (max-width:768px) {
-        width: 100%;
-        height: 100%;
-        line-height: 1.2;
-        font-size: 18px;
-      }
-    }
-    
-    .video {
-      display: flex;
-      justify-content: center;
-      margin-bottom: 25px;
-    }
-  }
-  .home {
-    position: relative;
-    margin: 30px auto;
-    color: rgb(48, 48, 48);
-    width: 60%;
-    p {
-      
-      font-size: 24px;
-      
-      @media screen and (max-width:768px){
-      font-size: 21px;
-    }
-
-  }
-  i {
-    display: block;
-    position: absolute;
-    font-size: 26px;
-    @media screen and (max-width:768px){
-  font-size: 24px;
-  }
   
-}
-.fas.fa-quote-left {
-    top: 50px;
-    left: 15px;
-}
-.fas.fa-quote-right {
-  top: 120px;
-  right: 15px;
-}
 
-  }
+  
+//   i {
+//     display: block;
+//     position: absolute;
+//     font-size: 26px;
+//     @media screen and (max-width:768px){
+//   font-size: 24px;
+//   }
+  
+// }
+// .fas.fa-quote-left {
+//     top: 50px;
+//     left: 15px;
+// }
+// .fas.fa-quote-right {
+//   top: 120px;
+//   right: 15px;
+// }
+
+  
 html {
   position: relative;
   overflow-y: hidden;
