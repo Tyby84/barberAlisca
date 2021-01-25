@@ -27,11 +27,11 @@
          Számomra rendkívül fontos a folyamatos szakmai fejlődés, illetve fejlesztés. Missziómnak érzem, hogy a magas szintű borbély kultúrát népszerűsítsem Szekszárdon, illetve a régióban, ezáltal értéket teremtsek, és adjak valamit a szülővárosomnak.
          A szalonban szívesen látok - korosztálytól függetlenül - minden olyan férfi vendéget, akinek fontos az igényes megjelenés.
          Hiszen az igazi férfiak borbélyhoz járnak.</p>
-      <!-- <p v-scroll-reveal.reset="{  origin: 'right',duration: 1000, distance: '50px',}">
-         
-       </p> -->
-      
 
+         <div class="floatbot homepics">
+            <img src="images/tomi.jpg" width="250" alt="">
+         </div>
+      
       </div>
        
    

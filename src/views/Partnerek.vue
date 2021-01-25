@@ -4,15 +4,15 @@
         <div class="flexrow">
             <div class="card">
                 <img src="images/partnerek/landoftales.jpg"  alt="landoftales">
-                <p><a href="#" target="_blank" rel="noopener noreferrer">Land of tales</a></p>
+                <p><a href="https://www.facebook.com/landoftalestattoo" target="_blank" rel="noopener noreferrer">Land of tales</a></p>
             </div>
             <div class="card">
                 <img src="images/partnerek/landoftales.jpg"  alt="landoftales">
-                <p><a href="#" target="_blank" rel="noopener noreferrer">Land of tales</a></p>
+                <p><a href="https://www.facebook.com/landoftalestattoo" target="_blank" rel="noopener noreferrer">Land of tales</a></p>
             </div>
             <div class="card">
                 <img src="images/partnerek/landoftales.jpg"  alt="landoftales">
-                <p><a href="#" target="_blank" rel="noopener noreferrer">Land of tales</a></p>
+                <p><a href="https://www.facebook.com/landoftalestattoo" target="_blank" rel="noopener noreferrer">Land of tales</a></p>
             </div>
         </div>
     </div>

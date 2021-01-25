@@ -15,6 +15,19 @@ html {
   overflow-y: hidden;
 }
 
+.vueperslides {
+  padding: 20px 0px;
+}
+
+.vueperslides .vueperslide {
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.vueperslides .vueperslide .vueperslides__arrow {
+  font-size: 15px;
+}
+
 footer {
   color: #eee;
   background-color: #5e5e5e;

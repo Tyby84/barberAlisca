@@ -34,6 +34,24 @@ html {
   position: relative;
   overflow-y: hidden;
 }
+
+.vueperslides {
+  padding: 20px 0px;
+
+  .vueperslide {
+      background-size: contain;
+      background-repeat: no-repeat;
+
+      .vueperslides__arrow {
+          font-size: 15px;
+      }
+      
+  }
+  .vueperslides__bullets {
+     // display: none;
+  }
+}
+
   footer {
     color: #eee;
     background-color: rgb(94, 94, 94);
