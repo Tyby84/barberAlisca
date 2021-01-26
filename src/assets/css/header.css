@@ -110,8 +110,8 @@ header .navigation_mobile {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border-radius: 20px;
-  background-color: #555555;
+  border-radius: 15px;
+  background-color: #86786f;
   border: 1px solid #fff;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
@@ -154,6 +154,8 @@ header .navigation_mobile a {
   font-weight: bold;
   letter-spacing: 2px;
   margin-bottom: 12px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 2px;
 }
 
 header .menu-bar {

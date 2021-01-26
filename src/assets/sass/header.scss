@@ -72,8 +72,8 @@ header {
     .navigation_mobile {
         display: flex;
         flex-direction: column;
-        border-radius: 20px;
-        background-color: rgb(85, 85, 85); 
+        border-radius: 15px;
+        background-color: #86786f; 
         border: 1px solid #fff;
         align-items: baseline;
         text-align: center;
@@ -109,6 +109,8 @@ header {
             font-weight: bold;
             letter-spacing: 2px;
             margin-bottom: 12px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 2px;
         }
     }
     .menu-bar {
