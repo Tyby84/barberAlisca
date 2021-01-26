@@ -26,14 +26,9 @@
 			<ul class="nav__mobile__ul">
         <div><router-link to="/"><i class="fas fa-home"></i> Home</router-link></div>
         <div><router-link to="/about"><i class="far fa-user"></i> Rólam</router-link></div>
-        <div><router-link to="/prices"><i class="fas fa-wallet"></i> Árak</router-link></div>
+        <div><router-link to="/prices"><i class="fas fa-coins"></i> Árak</router-link></div>
         <div><router-link to="/partnerek"> <i class="fas fa-users"></i> Partnerek</router-link></div>
         <div><router-link to="/contact"><i class="far fa-address-card"></i> Kapcsolat</router-link></div>
-
-				<!-- <a href="#rolunk"><li class="nav__mobile__li"> Rólunk</li></a>
-				<a href="#infok"><li class="nav__mobile__li"> Hasznos infók</li></a>
-				<a href="#elerhetoseg"><li class="nav__mobile__li"> Elérhetőségeink</li></a>
-				<a href="#"><li class="nav__mobile__li"> Galéria</li></a> -->
 			</ul>
 		</nav>
  
@@ -71,11 +66,9 @@
       }
       },
       mounted() {
-        this.calcHour();
+        //this.calcHour();
         this.clickClose();
         this.closeMenu();
-        
-        //console.log('fut');
       },
       methods: {
       clickClose() {
@@ -89,17 +82,17 @@
         this.clicked = false;
         this.isActive = false;
       },
-      calcHour() {
-        console.log('fut');
-        //let time = new Date();
-        let timeNow = this.time.getHours();
-        console.log(timeNow);
-        if (timeNow > 12) {
-          this.istwelve = false;
-        } else {
-          this.istwelve = true;
-        }
-      }
+      // calcHour() {
+      //   console.log('fut');
+      //   //let time = new Date();
+      //   let timeNow = this.time.getHours();
+      //   console.log(timeNow);
+      //   if (timeNow > 12) {
+      //     this.istwelve = false;
+      //   } else {
+      //     this.istwelve = true;
+      //   }
+      // }
       }
   }
 </script>

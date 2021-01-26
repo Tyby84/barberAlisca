@@ -7,7 +7,7 @@ header {
     height: 28vh;
     display: flex;
     align-items: center;
-    
+    padding-bottom: 25px;
     //background-color: rgba(50, 50, 50,1);
     //background-blend-mode: lighten;
     @include tablet820 {
@@ -22,16 +22,17 @@ header {
         align-items: center;
         width: 40vw;
         a {
-            color: #eee;
+            color: rgb(51, 51, 51);
             text-decoration: none;
             font-size: 20px;
-            font-weight: 200;
+            font-weight: 300;
             padding: 8px 10px;
-            background-color: rgb(82, 82, 82);
+            background-color: #DAD2CD;
             border-radius: 10px;
             transition: .5s all ease-in-out;
             &:hover, &:active {
-                background-color: rgba(82, 82, 82, 0.39);
+                background-color: #af998b;
+                color: #eee;
             }
         }
         @media screen and (max-width: 1250px) {
@@ -74,8 +75,9 @@ header {
         border-radius: 20px;
         background-color: rgb(85, 85, 85); 
         border: 1px solid #fff;
-        align-items: center;
-        width: 60vw;
+        align-items: baseline;
+        text-align: center;
+        width: 70vw;
         margin: 5px 0px 0px 5px;
         z-index: 8; 
         height: fit-content;
@@ -105,8 +107,8 @@ header {
             color: #e9e9e9;
             font-size: 19px;
             font-weight: bold;
-            letter-spacing: 1px;
-            margin-bottom: 8px;
+            letter-spacing: 2px;
+            margin-bottom: 12px;
         }
     }
     .menu-bar {
