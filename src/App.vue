@@ -64,13 +64,18 @@
     data: function() {
       return {
         clicked: false,
-        isActive: false
+        isActive: false,
+        time: new Date(),
+        istwelve: false     
         
       }
       },
       mounted() {
-        this.clickClose;
-        this.closeMenu;
+        this.calcHour();
+        this.clickClose();
+        this.closeMenu();
+        
+        //console.log('fut');
       },
       methods: {
       clickClose() {
@@ -83,8 +88,18 @@
       closeMenu() {
         this.clicked = false;
         this.isActive = false;
+      },
+      calcHour() {
+        console.log('fut');
+        //let time = new Date();
+        let timeNow = this.time.getHours();
+        console.log(timeNow);
+        if (timeNow > 12) {
+          this.istwelve = false;
+        } else {
+          this.istwelve = true;
+        }
       }
-      
       }
   }
 </script>

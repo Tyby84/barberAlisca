@@ -13,6 +13,9 @@
                 <p><i class="far fa-clock"></i> Nyitvatartás</p>
                 <p>Hétfő - Péntek : 09:00 - 18:00</p>
                 <p>Szombat - Vasárnap : Zárva</p>
+                <p v-if="reggel">Jó reggelt, van már időpontod?</p>
+                <p v-if="delutan">Jó napot, van már időpontod?</p>
+                <p v-if="este">Jó estet, van már időpontod?</p>
                 <p><i class="far fa-calendar-check"></i> <a href="http://bwnet.hu/partner/AliscaBarberSalon" target="_blank">Időpontfoglalás</a></p>
             </div>
         </div>
@@ -20,3 +23,33 @@
 
    </div>
 </template>
+
+<script>
+export default {
+    data: function() {
+        return {
+            reggel: false,
+            delutan: false,
+            este: false,
+            time: new Date()
+        }
+    },
+        mounted() {
+            this.getDayTime();
+        
+        },
+        methods: {
+            getDayTime() {
+                if(this.time.getHours() < 12) {
+                    this.reggel = true;
+
+                } else if ( (this.time.getHours() > 12) && (this.time.getHours() < 18) ) {
+                    this.delutan = true;
+                } else {
+                    this.este = true;
+                }
+            }
+        }
+
+    }
+</script>
