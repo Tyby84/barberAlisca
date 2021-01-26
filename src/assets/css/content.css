@@ -10,14 +10,15 @@
   height: 65vh;
   padding-bottom: 15px;
   overflow: auto;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .content h2 {
-  margin-top: 15px;
   padding-bottom: 15px;
   color: #303030;
   width: 50%;
-  margin: 15px auto 0 auto;
+  margin: 20px auto 0 auto;
   border-bottom: 1px solid #eee;
 }
 
@@ -74,7 +75,6 @@
   position: relative;
   margin: 0px auto;
   color: #303030;
-  width: 60%;
 }
 
 .home p {
