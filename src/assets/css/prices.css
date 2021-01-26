@@ -1,7 +1,7 @@
 .priceList img {
   display: block;
   width: 40%;
-  margin: 20px auto 0 auto;
+  margin: 30px auto 0 auto;
 }
 
 @media screen and (max-width: 768px) {
