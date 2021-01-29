@@ -1,15 +1,26 @@
 @import 'mixin.scss';
 header {
-    background: url('/images/header-cut.jpg') no-repeat; 
+    @media screen and (min-width:1367px) {
+    background: url('/images/bgLg.png') no-repeat; 
     background-size: 100vw 100%;
-    background-size: 100% 100%;
+    background-size: contain;
     background-position: 50% 50%;
-    height: 28vh;
+    //background-color: rgb(53, 53, 53);
+    //background-blend-mode: darken;
+    height: 253px;
+    }
+    
+    background: url('/images/laptopHead.jpg') no-repeat; 
+    background-size: 100vw 100%;
+    background-size: contain;
+    background-position: 50% 50%;
+    //background-color: rgb(53, 53, 53);
+    //background-blend-mode: darken;
+    height: 180px;
     display: flex;
     align-items: center;
-    padding-bottom: 25px;
-    //background-color: rgba(50, 50, 50,1);
-    //background-blend-mode: lighten;
+    padding-bottom: 25px; 
+    
     @include tablet820 {
         background: url('/images/header820.jpg') no-repeat; 
         background-size: 100vw 100%;

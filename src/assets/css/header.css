@@ -1,9 +1,9 @@
 header {
-  background: url("/images/header-cut.jpg") no-repeat;
+  background: url("/images/laptopHead.jpg") no-repeat;
   background-size: 100vw 100%;
-  background-size: 100% 100%;
+  background-size: contain;
   background-position: 50% 50%;
-  height: 28vh;
+  height: 180px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11,6 +11,16 @@ header {
       -ms-flex-align: center;
           align-items: center;
   padding-bottom: 25px;
+}
+
+@media screen and (min-width: 1367px) {
+  header {
+    background: url("/images/bgLg.png") no-repeat;
+    background-size: 100vw 100%;
+    background-size: contain;
+    background-position: 50% 50%;
+    height: 253px;
+  }
 }
 
 @media screen and (max-width: 820px) {

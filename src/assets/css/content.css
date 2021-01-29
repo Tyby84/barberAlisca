@@ -7,11 +7,17 @@
   background-color: rgba(230, 230, 230, 0.85);
   background-blend-mode: lighten;
   position: relative;
-  height: 65vh;
+  height: calc(100vh - (7vh + 180px));
   padding-bottom: 15px;
   overflow: auto;
   padding-left: 5px;
   padding-right: 5px;
+}
+
+@media screen and (min-width: 1367px) {
+  .content {
+    height: calc(100vh - (7vh + 253px));
+  }
 }
 
 .content h2 {
